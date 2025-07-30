@@ -1,6 +1,9 @@
 import pandas as pd
 import streamlit as st
 import plotly.express as px
+
+st.markdown("<h1 style='color:#FF5733;'>Dashboard de anuncios de ventas de coches</h1>", unsafe_allow_html=True)
+
 car_data = pd.read_csv('vehicles_us.csv')
 hist_button = st.button('Construir histograma')  # crear un botón
 
